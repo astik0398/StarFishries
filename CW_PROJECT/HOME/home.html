@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Sandwiches, Waffle Potato Fries, Salads & More | Chick-fil-A</title>
+    <link rel="icon" type="image/x-icon" href="./android-chrome-192x192.png">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            box-sizing: border-box;
+        }
+
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            height: 64px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #nav a{
+            color: #dd0031;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        #nav a:hover{
+            text-decoration: underline;
+        }
+
+        #logo{
+            width: 80px;
+        }
+
+        #leftpart{
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #menu{
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+            /* border: 2px solid greenyellow; */
+            /* margin: auto; */
+        }
+
+        #righttext{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #location{
+            width: 24px;
+        }
+
+        #search{
+            width: 19px;
+        }
+
+        #orderbtn{
+            background-color: #df0c25;
+            border-radius: 24px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: white;
+            width: 164px;
+            height: 48px;
+        }
+
+        #orderbtn:hover{
+            cursor: pointer;
+            background-color: #af272f;
+        }
+
+        #top{
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            align-items: center;
+            margin: 20px 30px 0px 70px ;
+            /* margin-top: 20px; */
+        }
+
+        #mid-left{
+            height: 410px;
+            width: 665px; 
+            background-color: #f4f8f9;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            /* border: 2px solid black; */
+        }
+
+        #mid-right{
+            height: 410px;
+            width: 665px; 
+            background-color: #f4f8f9;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+        }
+
+        #mid-right img{
+            height: 410px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        #mid-left img{
+            height: 410px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        .card{
+            margin-left: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .card button{
+            margin-top: 25px;
+            width: 130px;
+            height: 50px;
+            background-color: #dd0031;
+            border-radius: 25px;
+            color: white;
+            font-weight: 700;
+            margin-top: 100px;
+        }
+
+        button{
+            border: none;
+        }
+
+        .card h5{
+            font-size: 18px;
+            color: #dd0031;
+        }
+
+        .card h2{
+            font-size: 36px;
+            color: #004f71;
+        }
+
+        .card p{
+           font-size: 18px;
+           color: #485259;
+        }
+
+        #mid{
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 2px solid black; */
+        }
+
+        #rec-card{ 
+            display: flex;
+            background-color: #f4f8f9;
+            width: 92%;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 25px;
+        }
+
+        #rec-card img{
+            width: 676px;
+            height: 392px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        #rec-left{
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+
+        #rec-left h2{
+            font-size: 36px;
+            color: #004f71;
+        }
+
+        #rec-left p{
+            font-size: 18px;
+            color:#485259;
+            margin-top: 10px;
+        }
+
+        #rec-left button{
+            width: 136px;
+            height: 46px;
+            background-color: white;
+            color: #df0c25;
+            font-size: 16px;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+        #rec-card2{ 
+            display: flex;
+            width: 92%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        #rec-card2 img{
+            width: 676px;
+            height: 392px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        #rec-card3{ 
+            display: flex;
+            width: 92%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        #rec-card3 img{
+            width: 676px;
+            height: 392px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+      #last{
+        margin-top: 40px;
+      }
+
+      #last{
+        background-image: url("./footer-burger-phone-desktop-new-3.jpg");
+        display: flex;
+        justify-content: end;
+        height: 430px;
+      }
+
+      #last img{
+        width: 100px;
+      }
+
+      button:hover{
+        cursor: pointer;
+      }
+
+      #last-cont{
+        width: 30%;
+        height: 450px;
+        text-align: center;
+        margin-top: 5px;
+
+      }
+
+      #last-cont p{
+        margin-top: 20px;
+        color: #485259;
+      }
+
+      #last-cont h2{
+        color: #485259;
+      }
+
+      #last-cont button{
+        font-weight: 600;
+            color: white;
+            width: 164px;
+            height: 48px;
+            border-radius: 25px;
+        background-color: #dd0031;
+        margin-top: 40px;
+      }
+
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+
+        <div id="leftpart">
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/HOME/home.html"> <img id="logo" src="./spicyHot-removebg-preview.png" alt=""> </a>
+            <img id="location" src="./CFA_Icon_Locations_Red_RGB-removebg-preview (1).png" alt="">
+            <a href="">Find a restaurant</a>
+        </div>
+
+        <div id="menu">
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/MENU/menu.html">Menu</a>
+            <a href="">Stories</a>
+            <a href="">About</a>
+            <a href="">Careers</a>
+        </div>
+
+        <div id="righttext">
+            <a href="">Chick-fil-A One </a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/SIGN%20IN/sign_in.html"> (Sign In)</a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/ORDER/order.html"> <button id="orderbtn">Order Food</button> </a>
+            <img id="search" src="./download-removebg-preview.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="top">
+        <div id="top-left">
+            <h3 style="color: #485259; font-size: 22px; margin-bottom: 15px;">See you tomorrow</h3>
+            <h1 style="font-size: 48px; color: #dd0031; font-weight: 700;">It’ll be our pleasure to serve <br> you again soon</h1>
+            <button style="width: 245px; height: 65px; border-radius: 13px; background-color: #dd0031; margin-top: 20px; color: white; font-weight: 700;">Schedule your catering order</button>
+        </div>
+        <img src="./large-CFA2212020-Catering-Daypart-Desktop_710x580V3-1.jpg" alt="">
+    </div>
+    <div id="mid">
+        <div id="mid-left">
+            <div class="card">
+                <h5>Customer favorite</h5>
+                <h2>Mac & Cheese</h2>
+                <p>Pair your entrée and drink with the warm, melty Mac & Cheese, baked in-restaurant with a special blend of cheddar, Parmesan, and Romano.</p>
+                <button>View product</button>
+            </div>
+    
+            <div>
+                <img src="./CFA2212020-MacCheese-Module-Desktop_317x322V1.jpg" alt="">
+            </div>
+        </div>
+    
+        <div id="mid-right">
+            <div class="card">
+                <h5>A side with a crunch</h5>
+                <h2>Kale Crunch Side</h2>
+                <p style="font-size: 18px;">Try this blend of kale and green cabbage tossed with an Apple Cider and Dijon Mustard vinaigrette and topped with Roasted Almonds.</p>
+                <button>View product</button>
+            </div>
+    
+            <div>
+                <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Daypart%20Hero/Winter23/KaleCrunchSalad-V2-D_317x322.jpg?h=322&w=317&la=en" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="rec-card">
+        <div id="rec-left">
+            <div id="rec-left-cont">
+                <h2>Hungry for more?</h2>
+                <p>Whether you're hungry for a freshly prepared salad or the Chick-fil-A® Chicken Sandwich with Waffle Potato Fries™, we're serving delicious food made with quality ingredients every day (except Sunday).</p>
+                 <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/MENU/menu.html"> <button>View full menu</button> </a>
+            </div>
+            
+        </div>
+
+        <div>
+            <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Home%20Page%20Refresh/Home%20Page%20Refresh%20V2/Together-Salads-menu-module-desktop.jpg?h=454&w=648&la=en" alt="">
+        </div>
+    </div>
+
+    <div id="rec-card2">
+        <div id="rec-left">
+            <div id="rec-left-cont">
+                <h2>Eat more, receive more</h2>
+                <p>Order ahead on the app or online, and receive points from qualifying purchases. Then, use those points to redeem available rewards (Waffle Potato Fries™, anyone?).</p>
+                <button style="width: 180px; height: 46px;">Join Chick-fil-A-One</button>
+            </div>
+            
+        </div>
+
+        <div>
+            <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Home%20Page%20Refresh/Home%20Page%20Refresh%20V2/large-CFA2212020-GroupCandid-Module2-Desktop_648x454.jpg?h=454&w=648&la=en" alt="">
+        </div>
+    </div>
+
+    <div id="rec-card3">
+
+        <div>
+            <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Home%20Page%20Refresh/Home%20Page%20Refresh%20V2/eGiftCard_Landing-Page_Hero_Desktop_Cow1_636x415.jpg?h=415&w=636&la=en" alt="">
+        </div>
+
+        <div id="rec-left">
+            <div id="rec-left-cont">
+                <h2>A little thing for those you love a lot</h2>
+                <p>No matter the season, a gift card from Chick-fil-A is the gift that keeps on chicken.</p>
+
+                <div id="btndiv">
+                    <button style="width: 200px; height: 46px; background-color: #dd0031; color: white;">Learn about gift cards</button>
+                    <button style="width: 156px; height: 46px;">Shop eGift cards</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="rec-card2">
+        <div id="rec-left">
+            <div id="rec-left-cont">
+                <h2>Join us as we celebrate The Little Things</h2>
+                <p>You never know when the smallest thing can make someone’s day. Discover how our Chick-fil-A® Team Members bring #thelittlethings to our customers.</p>
+                <button style="width: 320px; height: 46px;">Watch The Little Things video series</button>
+            </div>
+            
+        </div>
+
+        <div>
+            <img src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Home%20Page%20Refresh/Home%20Page%20Refresh%20V2/large-CFA2212020-GroupCandid-Module2-Desktop_648x454.jpg?h=454&w=648&la=en" alt="">
+        </div>
+    </div>
+
+    <div id="last">
+      <div id="last-cont">
+        <img src="./spicyHot-removebg-preview.png" alt="">
+        <h2>Join Chick-fil-A One®. Earn points with every qualifying purchase. Redeem available rewards of your choice.</h2>
+        <p>The Chick-fil-A App is not presently accepted at Chick-fil-A Express™ and Chick-fil-A licensed locations such as those in airports and college campuses. These locations are operated by professional third-party food contractors and their operating systems do not currently offer guests the ability to earn points or redeem rewards through the Chick-fil-A App.</p>
+        <button>Learn more</button>
+       </div>
+    </div>
+    
+</body>
+</html>
