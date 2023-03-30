@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakfast Menu</title>
+    <title>BREAKFAST MENU</title>
     <link rel="icon" type="image/x-icon" href="./android-chrome-192x192.png">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
 
@@ -40,7 +42,12 @@
         }
 
         #logo{
-            width: 80px;
+            width: 70px;
+        }
+
+        #logo:hover{
+            cursor: pointer;
+            transform: scale(1.5);
         }
 
         #leftpart{
@@ -68,6 +75,12 @@
             gap: 20px;
         }
 
+		span{
+			color: yellow;
+			font-size: large;
+			padding-left: 5px;
+		}
+
         #location{
             width: 24px;
         }
@@ -88,7 +101,8 @@
 
         #orderbtn:hover{
             cursor: pointer;
-            background-color: #af272f;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transform: scale(1.03);
         }
 
         #menu-top{
@@ -132,7 +146,14 @@
             color: white;
             border-radius: 25px;
             margin-top: 10px;
+			box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
+
+		.cards button:hover{
+			cursor: pointer;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+			transform: scale(1.1);
+		}
 
         #single{
             text-align: center;
@@ -177,7 +198,7 @@
     <div id="nav">
 
         <div id="leftpart">
-            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/HOME/home.html"> <img id="logo" src="./spicyHot-removebg-preview.png" alt=""> </a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/HOME/home.html"> <img id="logo" src="./android-chrome-192x192.png" alt=""> </a>
             <img id="location" src="./CFA_Icon_Locations_Red_RGB-removebg-preview (1).png" alt="">
             <a href="">Find a restaurant</a>
         </div>
@@ -192,7 +213,7 @@
         <div id="righttext">
             <a href="">Chick-fil-A One </a>
             <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/SIGN%20IN/sign_in.html"> (Sign In)</a>
-            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/ORDER/order.html"> <button id="orderbtn">Order Food</button> </a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/ORDER/order.html"> <button id="orderbtn" style="font-size: large;"> My Cart <span> <i class="fa-solid fa-cart-shopping" style="color: yellow;"></i> </span> </button> </a>
             <img id="search" src="./download-removebg-preview.png" alt="">
         </div>
 
@@ -221,79 +242,9 @@
         
     </div>
 
+	<div id="cont">
 
-    <div id="cont">
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/menu/Online/Sides%26treats/Jul19_OrganicAussieGreekYogurtParfaitCupGranola_pdp.png" alt="">
-            <h2> <a href="">Greek Yogurt Parfait</a> </h2>
-            <p>270 Cal per serving</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Sides/Sides%20PDP/_0000s_0010_%5BFeed%5D_0003s_0002_Sides_Fruit-Cup.png" alt="">
-            <h2> <a href="">Fruit Cup</a> </h2>
-            <p>60 Cal per Serving</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0018_%5BFeed%5D_0000s_0020_Breakfast_Biscuit.png" alt="">
-            <h2> <a href="">Buttered Biscuit</a> </h2>
-            <p>290 Cal per Biscuit</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/menu/Online/Breakfast/EMuffin_PDP.png" alt="">
-            <h2> <a href="">English Muffin</a> </h2>
-            <p>140 Cal per muffin</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0009_%5BFeed%5D_0000s_0028_Breakfast_Hashbrowns_2.png" alt="">
-            <h2> <a href="">Hash Browns</a> </h2>
-            <p>270 Cal per Serving</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0005_ChickenHashbrownBreakfastBowl-pdp_Hearty-Breakfast-Bowl_resize2.png" alt="">
-            <h2> <a href="">Hash Brown Scramble Bowl</a> </h2>
-            <p>470 Cal per bowl</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/menu/Online/Entrees/nuggets_8ct_PDP.png" alt="">
-            <h2> <a href="">Hash Brown Scramble Burrito</a> </h2>
-            <p>700 Cal per Burrito</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0014_%5BFeed%5D_0000s_0024_Breakfast_Chicken-Mini-4ct.png" alt="">
-            <h2> <a href="">Chick-fil-A Chick-n-Minis™</a> </h2>
-            <p>360 Cal per 4 Chick-n-Minis</p>
-            <button>Order Now</button>
-        </div>
-
-        <div class="cards">
-            <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0004_ChickenSausageBurrito-pdp_1797v2_2880px_resize2.png" alt="">
-            <h2> <a href="https://www.cfacdn.com/img/order/menu/Online/Entrees/strips_3ct_PDP.png">Hash Brown Scramble Burrito</a> </h2>
-            <p>700 Cal per Burrito</p>
-            <button>Order Now</button>
-        </div>
-
-    </div>
-
-    <div id="single">
-        <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0000_Stack620_0000_CFA_1605_60_Biscuit_Chicken_PROD_2155_1240px.png" alt="">
-        <h2> <a href="">Chick-fil-A® Chicken Biscuit</a> </h2>
-        <p>460 Cal per Biscuit</p>
-        <button>Order Now</button>
-    </div>
+	</div>
 
     <div id="last">
         <img style="height: 510px; width: 1496px;" src="https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg" alt="">
@@ -301,4 +252,92 @@
 
 </body>
 </html>
+
+<script>
+	let PRODUCTS = [{"image": "https://www.cfacdn.com/img/order/menu/Online/Sides%26treats/Jul19_OrganicAussieGreekYogurtParfaitCupGranola_pdp.png",
+	                  "title": "Greek Yogurt Parfait",
+					  "desc": "270 Cal per serving"},
+					  
+					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Sides/Sides%20PDP/_0000s_0010_%5BFeed%5D_0003s_0002_Sides_Fruit-Cup.png",
+	                  "title": "Fruit Cup",
+					  "desc": "60 Cal per Serving"},
+
+					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0018_%5BFeed%5D_0000s_0020_Breakfast_Biscuit.png",
+	                  "title": "Buttered Biscuit",
+					  "desc": "290 Cal per Biscuit"},
+
+					  {"image": "https://www.cfacdn.com/img/order/menu/Online/Breakfast/EMuffin_PDP.png",
+	                  "title": "English Muffin",
+					  "desc": "140 Cal per muffin"},
+
+					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0009_%5BFeed%5D_0000s_0028_Breakfast_Hashbrowns_2.png",
+	                  "title": "Hash Browns",
+					  "desc": "270 Cal per serving"},
+
+					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0005_ChickenHashbrownBreakfastBowl-pdp_Hearty-Breakfast-Bowl_resize2.png",
+	                  "title": "Hash Brown Scramble Bowl",
+					  "desc": "470 Cal per bowl"},
+
+					  {"image": "https://www.cfacdn.com/img/order/menu/Online/Entrees/nuggets_8ct_PDP.png",
+	                  "title": "Hash Brown Scramble Burrito",
+					  "desc": "700 Cal per Burrito"},
+
+					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0014_%5BFeed%5D_0000s_0024_Breakfast_Chicken-Mini-4ct.png",
+	                  "title": "Chick-fil-A Chick-n-Minis™",
+					  "desc": "360 Cal per 4 Chick-n-Minis"},
+
+					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0000_Stack620_0000_CFA_1605_60_Biscuit_Chicken_PROD_2155_1240px.png",
+	                  "title": "Chick-fil-A® Chicken Biscuit",
+					  "desc": "460 Cal per Biscuit"},
+					 
+					 ]
+
+     let container = document.getElementById("cont")
+
+	 let cartcount = document.querySelector("span")
+
+	 let cart_ls = JSON.parse(localStorage.getItem("mycart")) || []
+
+	 for(let i=0; i<PRODUCTS.length; i++){
+		
+		let cards = document.createElement("div")
+		cards.setAttribute("class", "cards")
+
+		let image = document.createElement("img")
+		let title = document.createElement("h2")
+		let description = document.createElement("p")
+		let button = document.createElement("button")
+
+		image.src = PRODUCTS[i].image
+		title.innerText = PRODUCTS[i].title
+		description.innerText = PRODUCTS[i].desc
+		button.innerText = "Add To Cart"
+
+		button.addEventListener("click", function(){
+
+			if(cart_ls.some(function(elem){return elem.title===title.innerText})){
+            alert("Product already added!")
+        }
+
+		else{
+			cart_ls.push(PRODUCTS[i])
+			localStorage.setItem("mycart", JSON.stringify(cart_ls))
+			// alert("Product added to cart!")
+		}
+			
+
+			cartcount.innerText = cart_ls.length
+		})
+
+
+
+		container.append(cards)
+
+		cards.append(image, title, description, button)
+	 }
+
+
+
+
+</script>
 

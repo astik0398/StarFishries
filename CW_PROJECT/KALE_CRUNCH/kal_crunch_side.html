@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAL CRUNCH SIDES</title>
+    <link rel="icon" type="image/x-icon" href="./android-chrome-192x192.png">
+
+    <style>
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8ee;
+        }
+
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            height: 64px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            /* width: 100%; */
+            background-color: white;
+        }
+
+        #nav a{
+            color: #dd0031;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        #nav a:hover{
+            text-decoration: underline;
+        }
+
+        #logo{
+            width: 80px;
+        }
+
+        #leftpart{
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #menu{
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+            /* border: 2px solid greenyellow; */
+            /* margin: auto; */
+        }
+
+        #righttext{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #location{
+            width: 24px;
+        }
+
+        #search{
+            width: 19px;
+        }
+
+        #orderbtn{
+            background-color: #df0c25;
+            border-radius: 24px;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: white;
+            width: 164px;
+            height: 48px;
+        }
+
+        #orderbtn:hover{
+            cursor: pointer;
+            background-color: #af272f;
+        }
+
+        
+        #main{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #left{
+            background-color: white;
+            z-index: -1;
+        }
+
+        #right{
+            padding-left: 15px;
+            width: 50%;
+            /* background-color: #fff8ee; */
+            /* z-index: -1; */
+        }
+
+        p{
+            color: #485259;
+        }
+
+        .cb{
+            margin-top: 20px;
+            font-size: 20px;
+            margin-bottom: 25px;
+            /* border: 2px solid greenyellow; */
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .button{
+            display: flex;
+            gap: 10px;
+        }
+
+        .button>button{
+            width: 150px;
+            height: 85px;
+            border-radius: 20px;
+            border: none;
+            background-color: white;
+            color: #dd0031;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .button>button:hover{
+            cursor: pointer;
+             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+             transform: scale(1.01);
+        }
+
+        input{
+            width: 18px;
+            height: 18px;
+            accent-color: #dd0031;
+        }
+
+        #cal{
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: left;
+            gap: 50px;
+        }
+
+        h3{
+            color: #004f71;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+
+        <div id="leftpart">
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/HOME/home.html"> <img id="logo" src="./android-chrome-192x192.png" alt=""> </a>
+            <img id="location" src="./CFA_Icon_Locations_Red_RGB-removebg-preview (1).png" alt="">
+            <a href="">Find a restaurant</a>
+        </div>
+
+        <div id="menu">
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/MENU/menu.html">Menu</a>
+            <a href="">Stories</a>
+            <a href="">About</a>
+            <a href="">Careers</a>
+        </div>
+
+        <div id="righttext">
+            <a href="">Chick-fil-A One </a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/SIGN%20IN/sign_in.html"> (Sign In)</a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/ORDER/order.html"> <button id="orderbtn">Order Food</button> </a>
+            <img id="search" src="./download-removebg-preview.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="main">
+        <div id="left">
+            <img style="width: 700px;" src="https://www.cfacdn.com/img/order/menu/Online/Sides%26treats/kaleCrunch_sm_pdp.png" alt="">
+        </div>
+
+        <div id="right">
+            <h1 style="color: #004f71; font-size: 40px;">Kale Crunch Side</h1>
+            <p>A blend of Curly Kale and Green Cabbage tossed with an Apple Cider and Dijon Mustard vinaigrette, all topped off with salted, crunchy Roasted Almonds</p>
+            <h5 style="color: #485259; font-size: 20px;">Options</h5>
+
+            <div class="cb">
+                <input name="check" type="radio">
+                <span>Kale Crunch Side</span>
+            </div>
+
+            <!-- <div class="cb">
+                <input name="check" type="radio">
+                <span>Medium Mac & Cheese</span>
+            </div> -->
+
+            <div class="button">
+                <button>Order Pickup</button>
+                <button>Order Delivery</button>
+                
+            </div>
+
+            <p>Catering also available</p>
+
+            <hr>
+
+            <div id="cal">
+                <div>
+                    <h3>120</h3>
+                    <p>Calories</p>
+                </div>
+
+                <div>
+                    <h3>9g</h3>
+                    <p>Fat</p>
+                </div>
+
+                <div>
+                    <h3>8g</h3>
+                    <p>Carbs</p>
+                </div>
+
+                <div>
+                    <h3>3g</h3>
+                    <p>Protein</p>
+                </div>
+            </div>
+
+            <p>Show full nutrition & allergens information for this product</p>
+
+            <hr>
+
+            <p>*Nutrition values are per Serving</p>
+            <p>**Prices vary by location</p>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
