@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            box-sizing: border-box;
+        }
+
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            height: 64px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #nav a{
+            color: #dd0031;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        #nav a:hover{
+            text-decoration: underline;
+        }
+
+        #logo{
+            width: 70px;
+        }
+
+        #logo:hover{
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+
+        #leftpart{
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #menu{
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+            /* border: 2px solid greenyellow; */
+            /* margin: auto; */
+        }
+
+        #righttext{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #location{
+            width: 24px;
+        }
+
+        #search{
+            width: 19px;
+        }
+
+        #orderbtn{
+            background-color: #df0c25;
+            border-radius: 24px;
+            font-family: sans-serif;
+            font-weight: 300;
+            color: white;
+            width: 164px;
+            height: 48px;
+            font-size: larger;
+            border: none;
+        }
+
+        #orderbtn:hover{
+            cursor: pointer;
+            background-color: #af272f;
+        }
+
+        /* ////////////////////////////////////////////////////////////////////////////////// */
+
+        .cards{
+            width: 95%;
+            /* background-color: rgb(242, 242, 242); */
+            /* background-color: rgb(235, 231, 231); */
+
+            background-color: whitesmoke;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 80px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-top: 60px;
+            justify-content: space-around;
+        }
+
+        .cards img{
+            width: 25%;
+            /* border: 2px solid grey; */
+            /* margin-bottom: 75px; */
+            /* margin-left: -50px; */
+        }
+
+        .texts{
+            font-size: x-large;
+            /* border: 2px solid greenyellow; */
+            /* margin-left: -250px; */
+        }
+
+        .texts p{
+            font-size: xx-large;
+        }
+
+        #addit{
+            /* border: 2px solid rgb(40, 40, 40); */
+            font-size: x-large;
+            font-weight: 700;
+            /* margin-left: -50px; */
+        }
+
+        #incredecre{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+            font-size: 50px;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #incredecre button{
+            width: 45px;
+            height: 45px;
+           border-radius: 15px;
+           font-size: 15px;
+           border: none;
+           background-color: white;
+           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        #incredecre button:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        #checkoutbtn{
+            margin-top: 60px;
+            width: 460px;
+            height: 65px;
+            background-color: #dd0031;
+            color: white;
+            border-radius: 25px;
+            border: none;
+            font-size: x-large;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-left: 35%;
+        }
+
+        button:hover{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .delbtn{
+            /* border: 2px solid rgb(25, 231, 21); */
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+
+        /* span:hover{
+            cursor: pointer;
+            transform: scale(1.5);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        } */
+
+        .delbtn:hover{
+            cursor: pointer;
+            transform: scale(1.5);
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="nav">
+
+        <div id="leftpart">
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/HOME/home.html"> <img id="logo" src="./android-chrome-192x192.png" alt=""> </a>
+            <img id="location" src="./CFA_Icon_Locations_Red_RGB-removebg-preview (1).png" alt="">
+            <a href="">Find a restaurant</a>
+        </div>
+
+        <div id="menu">
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/MENU/menu.html">Menu</a>
+            <a href="">Stories</a>
+            <a href="">About</a>
+            <a href="">Careers</a>
+        </div>
+
+        <div id="righttext">
+            <a href="">Chick-fil-A One </a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/SIGN%20IN/sign_in.html"> (Sign In)</a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/ORDER/order.html"> <button id="orderbtn">Checkout</button> </a>
+            <img id="search" src="./download-removebg-preview.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="container"></div>
+    <button id="checkoutbtn">Proceed To Checkout</button>
+</body>
+</html>
+
+<script>
+    let cart_ls = JSON.parse(localStorage.getItem("mycart"))
+
+    let container = document.getElementById("container")
+
+    display(cart_ls)
+
+    function display(data){
+        container.innerHTML = ""
+        data.forEach(function (elem, ind){
+            let cards = document.createElement("div")
+
+            let texts = document.createElement("div")
+
+            let deletebtn = document.createElement("span")
+            deletebtn.setAttribute("class", "delbtn")
+
+            let additional = document.createElement("div")
+            additional.setAttribute("id", "addit")
+
+            let incredecre = document.createElement("div")
+            incredecre.setAttribute("id", "incredecre")
+
+            cards.setAttribute("class", "cards")
+            texts.setAttribute("class", "texts")
+
+            let image = document.createElement("img")
+            let title = document.createElement("h1")
+            let decription = document.createElement("p")
+            let quantity = document.createElement("p")
+
+            let increment = document.createElement("button")
+            let decrement = document.createElement("button")
+
+            let space = document.createElement("span")
+
+            image.src = elem.image
+            title.innerText = elem.title
+            decription.innerText = elem.desc
+            quantity.innerText = "QUANTITY"
+            increment.innerText = "➕"
+
+            increment.addEventListener("click", function(){
+                elem.quantity++
+                localStorage.setItem("mycart", JSON.stringify(cart_ls))
+
+                display(data)
+            })
+
+            decrement.innerText = "➖"
+
+            decrement.addEventListener("click", function(){
+
+                if(elem.quantity > 1){
+                    elem.quantity--
+                localStorage.setItem("mycart", JSON.stringify(cart_ls))
+
+                display(data)
+                }
+                
+            })
+            space.innerText = elem.quantity
+            deletebtn.innerText = "🗑️"
+
+            // ///////////////////////////////////////////////////////////////////////
+
+            deletebtn.addEventListener("click", function(){
+              data.splice(ind, 1)
+              localStorage.setItem("mycart", JSON.stringify(cart_ls))
+
+              display(data)
+            })
+
+            // //////////////////////////////////////////////////////////////////////
+
+            container.append(cards)
+
+            cards.append(image, texts, additional, deletebtn)
+
+            texts.append(title, decription)
+
+            additional.append(quantity, incredecre)
+
+            incredecre.append(increment,space, decrement)
+        })
+    }
+</script>

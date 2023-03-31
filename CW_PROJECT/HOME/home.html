@@ -98,6 +98,10 @@
             align-items: center;
             margin: 20px 30px 0px 70px ;
             /* margin-top: 20px; */
+
+            /* border: 3px solid blue; */
+
+            width: 90%;
         }
 
         #mid-left{
@@ -290,6 +294,44 @@
             border-radius: 25px;
         background-color: #dd0031;
         margin-top: 40px;
+      }
+
+      /* /////////////////////////////////////// RESPONSIVENESS CSS//////////////////////////////////////////////// */
+
+      @media only screen and (max-width: 1251px){
+        #mid{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #mid-left{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        #mid-right{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+
+      }
+
+      @media only screen and (max-width: 1000px){
+        #top{
+           display: flex;
+           flex-direction: column;
+           margin-bottom: 30px;
+        }
+      }
+
+      @media only screen and (max-width: 1112px) {
+        #leftpart, #search{
+            display: none;
+        }
+
       }
 
     </style>
