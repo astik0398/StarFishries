@@ -190,6 +190,18 @@
             border: none;
         }
 
+        @media only screen and (max-width: 1200px){
+            #cont{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+        }
+
+        #leftpart{
+            display: none;
+        }
+        }
+
     </style>
 
 </head>
@@ -213,7 +225,7 @@
         <div id="righttext">
             <a href="">Chick-fil-A One </a>
             <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/SIGN%20IN/sign_in.html"> (Sign In)</a>
-            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/ORDER/order.html"> <button id="orderbtn" style="font-size: large;"> My Cart <span> <i class="fa-solid fa-cart-shopping" style="color: yellow;"></i> </span> </button> </a>
+            <a href="file:///C:/Users/HP/Desktop/gusty-crow-4734/CW_PROJECT/CART%20PAGE/cart_page.html"> <button id="orderbtn" style="font-size: large;"> My Cart <span> <i class="fa-solid fa-cart-shopping" style="color: yellow;"></i> </span> </button> </a>
             <img id="search" src="./download-removebg-preview.png" alt="">
         </div>
 
@@ -256,39 +268,48 @@
 <script>
 	let PRODUCTS = [{"image": "https://www.cfacdn.com/img/order/menu/Online/Sides%26treats/Jul19_OrganicAussieGreekYogurtParfaitCupGranola_pdp.png",
 	                  "title": "Greek Yogurt Parfait",
-					  "desc": "270 Cal per serving"},
+					  "desc": "270 Cal per serving",
+                       "quantity": "1"},
 					  
 					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Sides/Sides%20PDP/_0000s_0010_%5BFeed%5D_0003s_0002_Sides_Fruit-Cup.png",
 	                  "title": "Fruit Cup",
-					  "desc": "60 Cal per Serving"},
+					  "desc": "60 Cal per Serving",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0018_%5BFeed%5D_0000s_0020_Breakfast_Biscuit.png",
 	                  "title": "Buttered Biscuit",
-					  "desc": "290 Cal per Biscuit"},
+					  "desc": "290 Cal per Biscuit",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/menu/Online/Breakfast/EMuffin_PDP.png",
 	                  "title": "English Muffin",
-					  "desc": "140 Cal per muffin"},
+					  "desc": "140 Cal per muffin",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0009_%5BFeed%5D_0000s_0028_Breakfast_Hashbrowns_2.png",
 	                  "title": "Hash Browns",
-					  "desc": "270 Cal per serving"},
+					  "desc": "270 Cal per serving",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0005_ChickenHashbrownBreakfastBowl-pdp_Hearty-Breakfast-Bowl_resize2.png",
 	                  "title": "Hash Brown Scramble Bowl",
-					  "desc": "470 Cal per bowl"},
+					  "desc": "470 Cal per bowl",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/menu/Online/Entrees/nuggets_8ct_PDP.png",
 	                  "title": "Hash Brown Scramble Burrito",
-					  "desc": "700 Cal per Burrito"},
+					  "desc": "700 Cal per Burrito",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0014_%5BFeed%5D_0000s_0024_Breakfast_Chicken-Mini-4ct.png",
 	                  "title": "Chick-fil-A Chick-n-Minis™",
-					  "desc": "360 Cal per 4 Chick-n-Minis"},
+					  "desc": "360 Cal per 4 Chick-n-Minis",
+                      "quantity": "1"},
 
 					  {"image": "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0000_Stack620_0000_CFA_1605_60_Biscuit_Chicken_PROD_2155_1240px.png",
 	                  "title": "Chick-fil-A® Chicken Biscuit",
-					  "desc": "460 Cal per Biscuit"},
+					  "desc": "460 Cal per Biscuit",
+                      "quantity": "1"},
 					 
 					 ]
 
